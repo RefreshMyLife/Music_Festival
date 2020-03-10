@@ -1,0 +1,51 @@
+//main: ../style.less
+
+
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+.intro:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to right, #6545a1, #bf591d);  
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+    color: @main;
+    font-size: 1.86rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    padding: 0;
+}
+.intro__title{
+    width: 100%;
+    left: 0;
+    font-size: 5.333rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, #aa3a67, #FB8064);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    
+}
